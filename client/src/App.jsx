@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Hello from './components/Hello';
 import Fruits from './components/Fruits';
-import Song from './components/Song';
+import Songs from './components/Songs';
 
 function App() {
   const person = {
@@ -15,7 +15,7 @@ function App() {
     <div className='App'>
       <Hello person={person} />
       <Fruits />
-      <Song />
+      <Songs />
     </div>
   );
 }
