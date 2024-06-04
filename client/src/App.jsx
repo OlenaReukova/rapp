@@ -4,6 +4,7 @@ import Hello from './components/Hello';
 import Fruits from './components/Fruits';
 import Songs from './components/Songs';
 import ConditionalRendering from './components/ConditionalRendering';
+import Message from './components/Message';
 
 function App() {
   const person = {
@@ -18,6 +19,7 @@ function App() {
       <Fruits />
       <Songs />
       <ConditionalRendering />
+      <Message />
     </div>
   );
 }
