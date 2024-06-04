@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Song({ id, title, url, rating }) {
+function Song({ id, title, url, rating, soldOut }) {
   return (
     // <li>
     //   {id} {title} {url} {rating}
@@ -8,14 +8,23 @@ function Song({ id, title, url, rating }) {
 
     //I want to display a song with rating >200
     //Conditionally Rendering List Items
+    //   <>
+    //     {rating > 200 ? (
+    //       <li>
+    //         {id} {title} {url} {rating}
+    //       </li>
+    //     ) : (
+    //       ''
+    //     )}
+    //   </>
+    // );
+
+    //I want do display soldOut text
+    //Conditionally Rendering A Message Using Ternary
     <>
-      {rating > 200 ? ( // Colon added here
-        <li>
-          {id} {title} {url} {rating}
-        </li>
-      ) : (
-        ''
-      )}
+      <li>
+        {id} {title} {url} {rating} {soldOut ? 'soldOut' : ''}
+      </li>
     </>
   );
 }

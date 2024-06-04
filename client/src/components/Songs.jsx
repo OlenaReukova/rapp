@@ -8,18 +8,21 @@ function Songs() {
       title: 'Pete Tong, Ultra Naté, LP Giobbi, Jules Buckley - Free',
       url: 'https://youtu.be/YrjOdt4816Q?si=TJcK-YiARavUfW4Q',
       rating: 100,
+      soldOut: false,
     },
     {
       id: 523427,
       title: 'TCaptain & Tennille - Do That To Me One More Time',
       url: 'https://youtu.be/z_XfJyrNLRQ?si=REMMULZ7xE_to9j_',
       rating: 230,
+      soldOut: false,
     },
     {
       id: 82653,
       title: 'Michelle Gurevich - First Six Months of Love',
       url: 'https://youtu.be/NqGQIO2m3YQ?si=dCsmC9sHn2GI3rz_',
       rating: 2111,
+      soldOut: true,
     },
   ];
 
@@ -38,6 +41,7 @@ function Songs() {
             title={song.title}
             url={song.url}
             rating={song.rating}
+            soldOut={song.soldOut}
           />
         ))}
       </ul>
