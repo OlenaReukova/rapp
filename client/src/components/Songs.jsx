@@ -32,7 +32,13 @@ function Songs() {
           //   {song.rating}
           // </li>
           //   {song.rating}
-          <Song key={song.id} id={song.id} title={song.title} url={song.url} />
+          <Song
+            key={song.id}
+            id={song.id}
+            title={song.title}
+            url={song.url}
+            rating={song.rating}
+          />
         ))}
       </ul>
     </div>
